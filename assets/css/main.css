@@ -1,0 +1,248 @@
+:root{
+    --text-color : #333;
+    --infor-color : #000;
+    --border-color : rgb(0 0 0 / 10%);  
+    --header-height : 100px;
+}
+h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+  
+html{    
+      font-family: "San Francisco", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+      font-size: 62.5%;
+      line-height: 1.6rem;
+      color: #333;
+  }
+  
+body{
+      font-size: 1.4rem;
+  }
+
+#header{
+    height: var(--header-height);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.block-logo{
+    display: block;
+    height: 100%;
+    width: 180px;
+    background-color: #fff;    
+    position: relative;
+    transform:  skew(45deg);
+}
+
+.block-logo > img {
+    position: absolute;
+    transform: skew(-45deg);
+    height: 100%;
+}
+
+.block-logo::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -50px;
+    width: 40px;
+    height: 100px;
+    background-color: #fff;
+    border-right: 1px solid var(--border-color) ;
+    /* transform: skew(45deg); */
+}
+
+.nav{
+    width: 850px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-infor{
+    width:  100%;
+    display: flex;
+    background-color: #000;
+    line-height: 40px;
+    justify-content:space-between;
+    position: relative;
+    padding-left: 50px;
+    z-index:  -1;
+}
+.nav-infor::after{
+    content: "";
+    display:  block;
+    right: 0;
+    top: 0;
+    border: solid;
+    border-width: 20px;
+    transform: translateX(100%);
+    border-color: #000 transparent transparent #000;
+    position: absolute;
+}
+
+.nav-infor_open{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+
+.nav-infor  a{
+    color: #fff;
+    width: 100%;
+}
+.nav-infor_open{
+    height: 40px;
+}
+.nav-infor_open--time{
+    padding-left: 8px;
+
+}
+.nav-infor_open--phone{
+    padding: 0 16px;
+    background-color: #f19100;
+    padding: 0 10px;
+    position: relative;
+    margin-right: 40px;
+}
+
+.nav-infor_open--phone::before{
+    content: "";
+    display:  block;
+    left: 0;
+    top: 0;
+    border: solid;
+    border-width: 20px;
+    border-color:  #f19100 #f19100 transparent transparent;
+    position: absolute;
+    transform: translateX(-100%);
+}
+
+.nav-infor_open--phone::after{
+    content: "";
+    display:  block;
+    border: solid;
+    border-width: 20px;
+    border-color:   transparent transparent #f19100 #f19100;
+    position: absolute;
+    right: 0;
+    top : 0;
+    transform: translateX(100%);
+}
+
+
+.nav-content{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+
+.nav-item{
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-item > i {
+    margin: 0 4px;
+    opacity: 0.68;
+}
+
+
+.nav-item-title{
+    display: block;
+    font-weight: 400; 
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+.nav-item-title.active{
+    font-weight: 500; 
+    color: rgba(0, 0, 0, 1);
+}
+
+.sub-nav{
+    position: absolute;
+    top: 100%;
+    margin: 0 auto;
+    min-width: 180px;
+    line-height: 16px;
+    list-style:  none;
+    box-shadow: 1px 4px #cfcfcf;
+    display: none;  
+}
+
+.nav-item:hover{
+    color:#7f251c;
+}
+
+.nav-item:hover .sub-nav{
+   display: block;
+}
+
+.sub-nav__item{
+    line-height: 32px;
+    display: block;
+    margin: 0 8px;
+}
+
+.sub-nav__item + .sub-nav__item{
+   
+}
+
+.sub-nav-links:hover{
+    color: #7f251c;
+}
+.sub-nav-links{
+    display: block;
+    text-decoration: none;
+    color: #333
+}
+
+#main{
+    margin-top: var(--header-height);
+    height: 1000px;
+   
+}
+
+.slider{
+    width: 100%;
+}
+
+.slider_content{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.text-content{
+    position: absolute;
+    bottom: 0;
+}
