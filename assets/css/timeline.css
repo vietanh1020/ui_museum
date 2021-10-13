@@ -108,7 +108,7 @@
       font-family: 'Libre Franklin', sans-serif;
       font-size: 12px;
       text-transform: uppercase;
-      color: #ffc107;
+      color: #333;
       display: block;
       margin-bottom: 10px;
       font-weight: 600; }
@@ -255,7 +255,7 @@
 }
 
 .btn-warning{
-  background-color: rgba(224, 168, 0, 0.6);
+  background-color: rgba(241, 145, 0, 0.8);
 
 }
 
@@ -312,3 +312,4 @@
   font-size: 1.4rem;
   padding: 0 4px;
 }
+

@@ -1,6 +1,22 @@
 @media (max-width : 900px) {
-    .block-logo{
-        display: none;
-    }
     
+#header{
+    height: 40px;
+    overflow-x: hidden;
+}
+
+.block-logo{
+    display: none;
+}
+
+.nav{
+    width: 90%;
+}
+.nav-content{
+    display: none;
+}
+
+.nav-infor_open--phone {
+    display: none;
+}
 }

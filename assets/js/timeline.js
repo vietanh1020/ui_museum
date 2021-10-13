@@ -45,7 +45,6 @@ carousel();
 // pause video when close modal 
 var stopVideo = function () {
 	var iframe = document.querySelector('.modal').querySelector('iframe');
-    console.log(iframe)
 	if ( iframe ) {
 		var iframeSrc = iframe.src;
 		iframe.src = iframeSrc;
