@@ -180,14 +180,14 @@ body{
     opacity: 0.68;
 }
 
+
 .nav-item-title{
     display: block;
-    font-weight: 400; 
+    font-weight: 500; 
     color: rgba(0, 0, 0, 0.6);
 }
 
-.nav-item:hover .nav-item-title{
-    font-weight: 500; 
+.nav-item.active  .nav-item-title{
     color: #000;
 }
 
@@ -491,4 +491,8 @@ body{
 
 .event-item{
     padding: 0 24px 0 0;
+}
+
+#target{
+    color: #fff;
 }

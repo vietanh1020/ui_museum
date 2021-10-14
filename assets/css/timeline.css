@@ -41,6 +41,7 @@
     
   .timeline-carousel h1 {
     color: #333;
+    text-transform: uppercase;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 700; }
 
@@ -106,24 +107,32 @@
 
     .timeline-carousel__item-inner .title {
       font-family: 'Libre Franklin', sans-serif;
-      font-size: 12px;
+      font-size: 1.4rem;
       text-transform: uppercase;
       color: #333;
       display: block;
       margin-bottom: 10px;
-      font-weight: 600; }
+      font-weight: 600; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
     .timeline-carousel__item-inner p {
-      font-size: 12px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      font-size: 1.4rem;
       line-height: 18px;
       color: #333;
-      width: 80%;
+      width: 90%;
       text-align: justify;
       font-weight: 400;
       margin-bottom: 15px; }
 
     .timeline-carousel__item-inner .read-more {
-      font-size: 12px;
+      font-size: 1.2rem;
       color: #ffc107;
       display: table;
       margin-bottom: 10px;
@@ -265,7 +274,7 @@
 }
 
 .modal{
-  border-radius:  8px;
+  max-height: 90vh;
   overflow: hidden;
 }
 
@@ -284,6 +293,7 @@
 .modal-body {
   position:relative;
   padding: 0 4px;
+  height: 80vh;
 }
 .close {
   position:absolute;
@@ -310,6 +320,6 @@
   margin: 0 auto;
   text-align: justify;
   font-size: 1.4rem;
-  padding: 0 4px;
+  padding: 12px 4px 24px ;
 }
 

@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/timeline.css">
     <link rel="stylesheet" href="./assets/css/reponsive.css">
-    <title>Document</title>
+    <title>BẢO TÀNG NHÓM 11</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/icon.png" />
 </head>
 
 <body>
@@ -34,9 +35,11 @@
                 <div class="nav-infor">
                     <div class="nav-infor_open">
                         <i class="far fa-clock"></i>
-                        <p class="nav-infor_open--time">Giờ mở cửa: 8:00 đến 17:00 . Từ thứ 2 đến thứ 6</ơ>
+                        <div class="nav-infor_open--time"  id="target" >           
+                            Giờ mở cửa: 8:00 đến 17:00 . Từ thứ 2 đến thứ 6.
+                        </div>
                     </div>
-                    <div class="nav-infor_open--phone">
+                    <div class="nav-infor_open--phone" >
                         <i class="nav-icon-phone fas fa-phone"></i>
                         <a href="tel:+84397890510">+039 789 0510</a>
                     </div>
@@ -48,7 +51,7 @@
                     <div class="nav-item">
                         <span class="nav-item-title">Trưng bày hiện vật</span>
                     </div>
-                    <div class="nav-item">
+                    <div class="nav-item active">
                         <span class="nav-item-title">Chương trình giáo dục</span>
                     </div>
                     <div class="nav-item">
@@ -75,7 +78,7 @@
                 <div class="row">
                     <div class="col col-10 offset-1 text-center mb-5">
                         <h1>Bác Hồ với quê hương Nam Đàn</h1>
-                        <p class="lead text-muted">Quê hương Nam Đàn nằm ở hạ lưu Sông Lam của xứ Nghệ, là nơi Chủ tịch
+                        <p class="lead text-muted" style="font-size : 14px">Quê hương Nam Đàn nằm ở hạ lưu Sông Lam của xứ Nghệ, là nơi Chủ tịch
                             Hồ Chí Minh sinh ra và sống những năm tháng tuổi thơ êm đềm với những ước mơ cao đẹp.</p>
                     </div>
                 </div>
@@ -345,7 +348,9 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalScrollableTitle">Người thanh niên Nguyễn Tất Thành theo cha
                         rời quê hương vào Huế</h5>
-                    <button type="button" class="btn btn-warning" data-dismiss="modal">X</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">
+                        <i class="far fa-times"></i>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <div class="modal-media">
