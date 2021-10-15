@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,600,700,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
 
 
 *{
@@ -10,7 +10,7 @@
 .timeline-carousel {
   margin: 0;
   background-color: #f8f8f8;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   padding: 40px 6.9444% 40px 6.9444%;
   position: relative;
@@ -41,8 +41,8 @@
     
   .timeline-carousel h1 {
     color: #333;
-    text-transform: uppercase;
     font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
     font-weight: 700; }
 
   .timeline-carousel p {
@@ -126,7 +126,7 @@
       font-size: 1.4rem;
       line-height: 18px;
       color: #333;
-      width: 90%;
+      width: 100%;
       text-align: justify;
       font-weight: 400;
       margin-bottom: 15px; }

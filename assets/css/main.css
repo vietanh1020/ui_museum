@@ -21,6 +21,12 @@ h3,h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
   
 html{    
       font-family: "San Francisco", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
