@@ -46,6 +46,7 @@
     font-weight: 700; }
 
   .timeline-carousel p {
+    font-family: 'Libre Franklin', sans-serif;
     color: #333;
     font-weight: 300; }
 
@@ -119,15 +120,16 @@
     }
 
     .timeline-carousel__item-inner p {
+      font-family: 'OpenSans', sans-serif;
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       font-size: 1.4rem;
       line-height: 18px;
-      color: #333;
+      color: #6c757d;
       width: 100%;
-      text-align: justify;
+      height: 5.4rem;
       font-weight: 400;
       margin-bottom: 15px; }
 
@@ -274,7 +276,7 @@
 }
 
 .modal{
-  max-height: 90vh;
+  /* max-height: 90vh; */
   overflow: hidden;
 }
 
@@ -288,27 +290,20 @@
   font-size: 2rem;
   margin: 0 auto;
   padding: 4px;
+  text-align: center;
 }
 
 .modal-body {
   position:relative;
   padding: 0 4px;
-  height: 80vh;
+  /* height: 80vh; */
 }
-.close {
-  position:absolute;
-  right:-30px;
-  top:0;
-  z-index:999;
-  font-size:2rem;
-  font-weight: normal;
-  color:#fff;
-  opacity:1;
-}
+
 
 .modal-header {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .modal-video_header{
@@ -323,3 +318,7 @@
   padding: 12px 4px 24px ;
 }
 
+.btn-close{
+  background-color: #c4bbbb;
+  padding: 4px 12px;
+}

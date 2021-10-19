@@ -11,6 +11,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -28,14 +29,13 @@
 
     <div class="app-container">
         <div id="header">
-            <a href="" class="block-logo">
-                <img class="slider-img" src="./assets/img/logo.png" alt="Logo Web" srcset="">
-            </a>
+            <div class="block-logo" style="background-image:url('./assets/img/logo.png')">
+            </div>
             <div class="nav">
                 <div class="nav-infor">
                     <div class="nav-infor_open">
                         <i class="far fa-clock"></i>
-                        <div class="nav-infor_open--time"  id="target" >           
+                        <div class="nav-infor_open--time">           
                             Giờ mở cửa: 8:00 đến 17:00 . Từ thứ 2 đến thứ 6.
                         </div>
                     </div>
@@ -45,6 +45,15 @@
                     </div>
                 </div>
                 <div class="nav-content">
+
+                    <div class="mobile-page-current">
+                        Chương trình giáo dục
+                    </div>
+                    
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars menu-bar"></i>
+                    </div>
+                    
                     <div class="nav-item">
                         <span class="nav-item-title">Giới thiệu</span>
                     </div>
@@ -73,6 +82,7 @@
             </div>
         </div>
 
+    
         <section class="timeline-carousel">
             <div class="container">
                 <div class="row">
@@ -98,7 +108,7 @@
                         <span class="title">Người thanh niên Nguyễn Tất Thành theo cha rời quê hương vào Huế.</span>
                         <p>Từ đây, người đã di chuyển vào phía Nam, vừa học tiểu học, vừa trau dồi vốn chữ Hán, vừa học
                             thêm tiếng Pháp, rồi tham gia dạy học và bắt đầu tham gia các phong trào yêu nước.</p>
-                        <button type="button" class="btn btn-warning" data-toggle="modal"
+                        <button type="button" class="btn btn-warning btn-view-detail"  data-toggle="modal"
                             data-target="#exampleModalScrollable">Xem thêm</button>
                     </div>
                 </div>
@@ -118,8 +128,7 @@
                         <span class="time">5-6-1911</span>
                         <span class="title">Bác Hồ ra đi tìm đường cứu nước</span>
                         <p>Tại Bến cảng Sài Gòn, Nguyễn Tất Thành lấy tên là Văn Ba đã xuống tàu buôn Latouche-Tréville
-                            làm đầu bếp và xuất dương sang Pháp, bắt đầu hành trình tìm đường cứu nước, bôn ba hải ngoại
-                            suốt 30 năm</p>
+                           </p>
                         <button type="button" class="btn btn-warning"  data-toggle="modal"
                         data-target="#exampleModalScrollable">Xem thêm</button>
                     </div>
@@ -347,10 +356,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalScrollableTitle">Người thanh niên Nguyễn Tất Thành theo cha
-                        rời quê hương vào Huế</h5>
-                    <button type="button" class="btn btn-warning" data-dismiss="modal">
-                        <i class="far fa-times"></i>
-                    </button>
+                        rời quê hương vào Huế
+                    </h5>
                 </div>
                 <div class="modal-body">
                     <div class="modal-media">
@@ -384,12 +391,16 @@
                     </div>
 
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
 
 
     <script src="./assets/js/timeline.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>  
 </body>
 
 </html>

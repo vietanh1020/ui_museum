@@ -51,33 +51,19 @@ body{
     margin: 0 auto;
     padding-right: 40px;
 }
+.mobile-menu{
+    display: none;
+}
 
 .block-logo{
     display: block;
-    height: 100%;
-    width: 180px;
-    background-color: #fff;    
-    position: relative;
-    transform:  skew(45deg);
-}
-
-.block-logo > img {
-    position: absolute;
-    transform: skew(-45deg);
-    height: 100%;
-}
-
-.block-logo::after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -1px;
-    right: -50px;
-    width: 40px;
-    height: 100px;
-    background-color: #fff;
-    border-right: 1px solid var(--border-color) ;
-   
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    cursor: pointer;
+    margin-right: 50px;
 }
 
 .nav{
@@ -168,7 +154,7 @@ body{
     width: 100%;
     flex: 1;
     display: flex;
-    padding-left: 100px;
+    padding-left: 50px;
     justify-content: space-between;
 }
 
@@ -501,4 +487,11 @@ body{
 
 #target{
     color: #fff;
+}
+
+.btn-view-detail{
+}
+
+.mobile-page-current{
+    display: none;
 }
