@@ -490,8 +490,40 @@ body{
 }
 
 .btn-view-detail{
+    background-color: #f8f8f8 !important;
+    color: #fdc92e;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-view-detail:hover{
+    background-color: #f8f8f8 !important;
+    border: none;
+    color: #dbab1b;
+    text-decoration: underline;
+    
 }
 
 .mobile-page-current{
     display: none;
 }
+
+.icon-slick{
+    font-size: 3rem;
+}
+
+.btn-slick{
+ width: 50px;
+ height: 50px;
+ background-color: #ffc107;
+ opacity: 0.5;
+ border-radius: 14px !important;
+}
+
+.btn-slick:hover{
+    opacity:  1;
+}
+
+.btn-slick > i{
+    font-size: 2rem; 
+  }

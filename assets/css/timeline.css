@@ -21,6 +21,7 @@
     position: absolute;
     display: block;
     top: 0;
+    z-index: 1;
     height: 100%;
     width: 6.9444%;
     z-index: 3;
@@ -253,7 +254,8 @@
 .slick-prev, .slick-next {
   position: absolute;
   top: 0;
-  z-index: 9999;
+  top: 25%;
+  transform: translateY(50%);
   border-radius: 0;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 12px;
@@ -261,8 +263,8 @@
   font-weight: 700; }
 
 .slick-prev {
-  left: 0; 
-  z-index: 1;
+  left: -74px; 
+  z-index: 9999999999;
 }
 
 .btn-warning{
@@ -271,8 +273,8 @@
 }
 
 .slick-next {
-  right: 30px; 
-  z-index: 1;
+  right: -36px; 
+  z-index: 9999999999;
 }
 
 .modal{
@@ -296,7 +298,7 @@
 .modal-body {
   position:relative;
   padding: 0 4px;
-  /* height: 80vh; */
+  height: 70vh;
 }
 
 
