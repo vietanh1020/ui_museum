@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="./assets/css/game.css" rel="stylesheet">
-  <title>Quiz App</title>
+  <title>Câu hỏi</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="question-header">
-    </div>
     <div id="question-container" class="hide">
-      <h1 class="number_of_question">
-        Câu hỏi 1 trên 10
-      </h1>
-      <img class="question_img" src="./assets/img/la.jpg" alt="">
+      <div>
+        <div class="question_header">
+          <div class="number_of_question">
+          Câu hỏi 1 / 10
+          </div>
+          <div class="time">
+            <div  id="count_down" style="float: right;"></div>
+          </div>
+        </div>
+      </div>
       <div id="question">Câu hỏi</div>
+      <img class="question_img" src="./assets/img/la.jpg" alt="" id="question_img_id" style="width: 100%;">
       <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Đáp án A</button>
-        <button class="btn">Đáp án B</button>
-        <button class="btn">Đáp án C</button>
-        <button class="btn">Đáp án D</button>
+        <button class="btn answer_1">Đáp án A</button>
+        <button class="btn answer_2">Đáp án B</button>
+        <button class="btn answer_3">Đáp án C</button>
+        <button class="btn answer_4">Đáp án D</button>
       </div>
     </div>
     <div class="controls">
-      <button id="start-btn" class="start-btn btn">Start</button>
-      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <button id="start-btn" class="start-btn btn">Bắt đầu</button>
+      <!-- <button id="next-btn" class="next-btn btn hide">Next</button> -->
     </div>
   </div>
 
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script defer src="./assets/js/game.js"></script>
 </body>
