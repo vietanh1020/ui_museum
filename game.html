@@ -13,6 +13,9 @@
     <div id="question-container" class="hide">
       <div>
         <div class="question_header">
+          <div class="score">
+            Điểm : 10
+          </div>
           <div class="number_of_question">
           Câu hỏi 1 / 10
           </div>
@@ -21,14 +24,16 @@
           </div>
         </div>
       </div>
-      <div id="question">Câu hỏi</div>
+  
       <img class="question_img" src="./assets/img/la.jpg" alt="" id="question_img_id" style="width: 100%;">
+      <div id="question">Câu hỏi</div>
       <div id="answer-buttons" class="btn-grid">
         <button class="btn answer_1">Đáp án A</button>
         <button class="btn answer_2">Đáp án B</button>
         <button class="btn answer_3">Đáp án C</button>
         <button class="btn answer_4">Đáp án D</button>
       </div>
+      <div  id="count_down" style="float: right;"></div>
     </div>
     <div class="controls">
       <button id="start-btn" class="start-btn btn">Bắt đầu</button>
@@ -37,7 +42,6 @@
   </div>
 
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script defer src="./assets/js/game.js"></script>
 </body>
 
